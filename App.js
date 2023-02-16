@@ -5,7 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={textStyle.text}>Incognito Mail</Text>
+      <Text>A lightweight Mailing App...</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,5 +18,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: 1000,
+    letterSpacing: 3,
+  },
+});
+
+const textStyle = StyleSheet.create({
+  text: {
+    fontSize: 56,
   },
 });
